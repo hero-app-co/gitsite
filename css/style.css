@@ -100,56 +100,18 @@ a.typeform-share.typeform-bottom.button:hover {
 }
 
   /*Hub & App Sevices*/
-.detail-info {
-  background-color: #87d852;
-  padding: 20px;
-  color: white;
-  display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-.detail-info-list {
-  padding-left: 20px;
-}
-.detail-info h3, .detail-info h2 {
-  color: white;
-}
-.detail-info h2 {
-  text-transform: none;
-}
-.detail-info-item {
-  -webkit-flex-grow: 1;
-  -moz-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
-}
-
 .hide-small {
-  display: flex !important;
+  display: block !important;
 }
 .hide-large {
   display: none !important;
 }
 @media only screen and (max-width: 800px) {
-  .flex {
-    display: block;
-  }
   .hide-small {
     display: none !important;
   }
   .hide-large {
-    display: flex !important;
-  }
-  .detail-info {
-    text-align: center;
-  }
-  .detail-info-item p {
-    text-align: left;
-  }
-  .services-img {
-    text-align: center;
+    display: block !important;
   }
 }
 
