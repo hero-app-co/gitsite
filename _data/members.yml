@@ -1,44 +1,58 @@
-- avatar: images/@stock/member-1.jpg
-  name: Mark Wayne
-  position: Founder
+- avatar: images/team/Alex.png
+  name: Alex Crosby
+  position: Founder, CEO
   socials:
-    - link: http://twitter.com
-      icon: twitter
-    - link: http://facebook.com
-      icon: facebook
+    - link: https://www.linkedin.com/in/crosbyah
+      icon: linkedin
   desc:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/member-2.jpg
-  name: Kate Holms
-  position: Creative Director
+- avatar: images/team/Kirstie.png
+  name: Kirstie McPherson
+  position: Co-founder, COO
   socials:
-    - link: http://twitter.com
-      icon: twitter
-    - link: http://facebook.com
-      icon: facebook
-    - link: http://dribbble.com
-      icon: dribbble
+    - link: https://www.linkedin.com/in/kirstie-mcpherson-15033157
+      icon: linkedin
   desc:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/member-3.jpg
-  name: Tome Hason
-  position: Designer
+- avatar: images/team/Rory.png
+  name: Rory Shively
+  position: Co-founder, Technical Lead
   socials:
-    - link: http://twitter.com
-      icon: twitter
-    - link: http://facebook.com
-      icon: facebook
-    - link: http://tumblr.com
-      icon: tumblr
+    - link: https://www.linkedin.com/in/roryshively
+      icon: linkedin
   desc:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/member-4.jpg
-  name: Lily Whrem
-  position: Developer
+- avatar: images/team/AJ.png
+  name: A.J. Bingham
+  position: Government Insider
   socials:
-    - link: http://twitter.com
-      icon: twitter
-    - link: http://facebook.com
-      icon: facebook
+    - link: https://www.linkedin.com/in/ajbingham
+      icon: linkedin
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- avatar: images/team/Jess.jpg
+  name: Jess Moss
+  position: UI/UX Designer, Graphic Artist
+  socials:
+    - link: https://www.linkedin.com/in/jessmossisboss
+      icon: linkedin
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+# - avatar: images/@stock/member-4.jpg
+#   name: Louis Daily
+#   position: Software Engineer
+#   socials:
+#     - link: http://twitter.com
+#       icon: twitter
+#     - link: http://facebook.com
+#       icon: facebook
+#   desc:
+#     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- avatar: images/team/Jill.png
+  name: Jill Johnson
+  position: Sales, Brand Manager
+  socials:
+    - link: https://www.linkedin.com/in/jill-nettles-johnson-52465a80
+      icon: linkedin
   desc:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.

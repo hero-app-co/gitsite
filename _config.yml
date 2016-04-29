@@ -1,14 +1,17 @@
 # Site settings
-title: Devoll
-email: your-email@domain.com
+title: HERO
+email: accounts@hero-app.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  It’s time that someone offered a solution to reducing drunk driving. Instead
+  of focusing on the negatives, we focus on making people’s lives easier and
+  more rewarding. In the end, users are safer and there are less DUI’s and
+  related fatalities. We optimize access to all available transportation options
+  and reward designated drivers. We prove the social good in people. If it gets
+  people home without driving, it can be found on the HEROapp. 
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+# github_username:  jekyll
 
 # Build settings
 markdown: kramdown
