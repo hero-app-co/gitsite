@@ -1,0 +1,82 @@
+---
+layout: default
+title: Partnerships
+section_id: partnerships
+partnerships:
+  - title: USERS
+    cta_text: Lock in your FREE membership today.
+    intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam inventore aspernatur in fuga ipsam labore exercitationem voluptas amet consequuntur, fugiat ullam error odit vitae. Ipsa necessitatibus delectus omnis at! Dignissimos.
+    circle:
+      - description: QUICKLY FIND THE BEST OPTION FOR YOU
+        explaination: HERO makes it easy to compare all options side by side and discover options you may not know even exist.
+      - description: QUICKLY FIND THE BEST OPTION FOR YOU
+        explaination: HERO makes it easy to compare all options side by side and discover options you may not know even exist.
+      - description: QUICKLY FIND THE BEST OPTION FOR YOU
+        explaination: HERO makes it easy to compare all options side by side and discover options you may not know even exist.
+  - title: BRANDS
+    cta_text: Lock in your brand’s ability to partner with HERO today.
+    intro: HERO is revolutionizing how the alcohol industry helps their customers get home after drinking and forever changing the national narrative to one that focuses on a solution backed by data and analytics. We save lives by making customer's lives easier and more rewarding.
+    circle:
+      - description: Maximize brand presence in retail locations
+        explaination: HERO marketing materials are co-branded with your logo’s and product to separate your brand from competitors at retail locations. Distinguishing your brand as a steward of responsibility that is providing REAL VALUE to consumers lives while driving sales. (materials include: posters, coasters, table tents, and bill inserts)
+      - description: Increase revenue
+        explaination: Utilizing the HERO rewards platform, you are able to incentivize trial and recapture current current customers on future nights. The average reward redeemed during our pilot program created 1,000 social media impressions and a 31x return for every dollar in cost of goods.
+      - description: On-premise promotions to boost connection to your brand
+        explaination: Promotional on-site mixers at selected restaurant, wine bars and events.
+      - description: Improved market insights
+        explaination: Analytics and consumer demographic data from program improve cross channel marketing spends.
+      - description: Social media engagement and impressions
+        explaination: Increased presence on social media and in app when consumers use HERO to get home or redeem rewards. Every time a promotion is ran through HERO for redemption, the app auto posts on the customer’s social media, letting their friends and family know that they are getting rewarded from your company for being a stand up individual
+      - description: Badge of Honor and Digital Presence
+        explaination: Ability to include HERO in your marketing campaigns and on your website. Your logo and a link to your site will be featured on the HERO website and HERO hub (for businesses) to increase awareness to retail locations and customers.
+      - description: Corporate Social Responsibility
+        explaination: Fulfills CSR goals in a way that drives top line growth and brand loyalty.
+- title: INSURANCE
+  cta_text: NEED CALL TO ACTION
+  intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam inventore aspernatur in fuga ipsam labore exercitationem voluptas amet consequuntur, fugiat ullam error odit vitae. Ipsa necessitatibus delectus omnis at! Dignissimos.
+  circle:
+    - description: Safety Simplified
+      explaination: Customers can compare all options to get home in seconds. On Uber, Lyft, friends and more.
+    - description: Increase Revenue
+      explaination: Get more customers and recapture current ones on future nights by offering rewards on the app
+    - description: Reduce Liability
+      explaination: Offer a reward for free and our insurance partner will offer you “Safe Bar Discounts” on your liability insurance
+    - description: Brand Exposure
+      explaination:
+    - description: More Clients
+      explaination:
+    - description: Underwriting Analytics
+      explaination:
+- title: BUSINESS
+  cta_text: Add your bar or restaurant to HERO today.
+  intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam inventore aspernatur in fuga ipsam labore exercitationem voluptas amet consequuntur, fugiat ullam error odit vitae. Ipsa necessitatibus delectus omnis at! Dignissimos.
+  circle:
+    - description: QUICKLY FIND THE BEST OPTION FOR YOU
+      explaination: HERO makes it easy to compare all options side by side and discover options you may not know even exist.
+    - description: QUICKLY FIND THE BEST OPTION FOR YOU
+      explaination: HERO makes it easy to compare all options side by side and discover options you may not know even exist.
+    - description: QUICKLY FIND THE BEST OPTION FOR YOU
+      explaination: HERO makes it easy to compare all options side by side and discover options you may not know even exist.
+
+---
+
+<div class='full parallax' style='background-image: url(images/crowd.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Partnerships" tagline="Get to know what we do" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+
+<div class='full'>
+  <div class='row'>
+    <div class='medium-12 columns'>
+      {% for partnership in page.partnerships %}
+        <h1>{{ partnership.title }}</h1>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>

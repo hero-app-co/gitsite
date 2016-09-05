@@ -1,20 +1,20 @@
 - avatar: images/team/Alex.png
   name: Alex Crosby
-  position: Founder, CEO
+  position: Co-founder, CEO
   socials:
     - link: https://www.linkedin.com/in/crosbyah
       icon: linkedin
   desc:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/team/Kirstie.png
-  name: Kirstie McPherson
-  position: Co-founder, COO
-  socials:
-    - link: https://www.linkedin.com/in/kirstie-mcpherson-15033157
-      icon: linkedin
-  desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/team/Rory.png
+# - avatar: images/team/Kirstie.png
+#   name: Kirstie McPherson
+#   position: Co-founder, COO
+#   socials:
+#     - link: https://www.linkedin.com/in/kirstie-mcpherson-15033157
+#       icon: linkedin
+#   desc:
+#     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- avatar: images/team/Rory.jpg
   name: Rory Shively
   position: Co-founder, Technical Lead
   socials:
@@ -30,29 +30,29 @@
       icon: linkedin
   desc:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/team/Jess.jpg
-  name: Jess Moss
-  position: UI/UX Designer, Graphic Artist
+- avatar: images/team/David.jpg
+  name: David Auld
+  position: Lead Mobile Developer
   socials:
-    - link: https://www.linkedin.com/in/jessmossisboss
+    - link: https://ca.linkedin.com/in/david-auld-14959249
       icon: linkedin
   desc:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-# - avatar: images/@stock/member-4.jpg
-#   name: Louis Daily
-#   position: Software Engineer
+- avatar: images/team/Jill.png
+  name: Devon Crosby
+  position: Team Botanist
+  socials:
+    - link: http://twitter.com
+      icon: twitter
+    - link: http://facebook.com
+      icon: facebook
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+# - avatar: images/team/Jill.png
+#   name: Jill Johnson
+#   position: Sales, Brand Manager
 #   socials:
-#     - link: http://twitter.com
-#       icon: twitter
-#     - link: http://facebook.com
-#       icon: facebook
+#     - link: https://www.linkedin.com/in/jill-nettles-johnson-52465a80
+#       icon: linkedin
 #   desc:
 #     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/team/Jill.png
-  name: Jill Johnson
-  position: Sales, Brand Manager
-  socials:
-    - link: https://www.linkedin.com/in/jill-nettles-johnson-52465a80
-      icon: linkedin
-  desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.

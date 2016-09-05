@@ -1,0 +1,81 @@
+---
+layout: default
+title: Bars &amp; Restaurants
+section_id: getting-involved
+
+reward-perks:
+  - icon: fighter-jet
+    title: Open marketplace, free to any business to sign up
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum veritatis, corporis repellat minus perferendis voluptatum!
+  - icon: Price conscious (Surge pricing)
+    title: Offer rewards and determine how many points it costs to redeem
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores molestias error tenetur? Quis, neque, vel.
+  - icon: signal
+    title: Rewards can be anything; from free appetizers to tickets for sporting events or concerts
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero aspernatur autem rem asperiores veniam!
+  - icon: rocket
+    title: 31X return on $1 COG given out (3 month pilot, Bozeman, MT)
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eos, quis suscipit non provident! Quibusdam.
+---
+<div class='full parallax' style='background: #000; color: #fff;'>
+  <div class='row'>
+    <div class='twelve columns'>
+      {% include section-header.html title="Bars &amp; Restaurants" color="#fff" tagline="Let our patrons help your patrons" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<!-- Rewards -->
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="This is the same list as the rewards page just so ya know. Keep it DRY (Dont repeat yourself)" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='medium-6 columns centered-text'>
+      <img class="fadeinleft" alt="" src="../images/app/app-friends.png" />
+      <div class='three spacing'></div>
+    </div>
+    <div class='medium-6 columns'>
+      {% for service in page.reward-perks %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+<!-- Value Statements -->
+<div class="four spacing"></div>
+
+<div class="row">
+  <div class="large-12 columns">
+    {% include section-header.html title="Benefits" %}
+    <div class="spacing"></div>
+  </div>
+
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Lower liability' desc='description goes here' icon_class='fa fa-life-ring' delay='400' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Lower premiums' desc='description goes here' icon_class='fa fa-line-chart' delay='200' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Single solution that fits all your customers needs' desc='description goes here' icon_class='fa fa-gavel' delay='400' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Increased revenue' desc='description goes here' icon_class='fa fa-life-ring' delay='400' shape_class='icon-text-circle' %}
+  </div>
+</div>
+
+<div class="spacing"></div>

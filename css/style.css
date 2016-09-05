@@ -49,14 +49,18 @@
   /*Banner Image and CTA*/
 a.typeform-share.button {
   background-color: transparent;
+  background-color: white;
   border: 1px solid white;
   color: white;
+  color: #87d852;
   background-image: none;
 }
 a.typeform-share.button:hover {
   background-image: none;
   background-color: white;
+  background-color: transparent;
   color: #87d852;
+  color: white;
 }
 a.typeform-share.typeform-top {
   width: 100%;
@@ -65,6 +69,7 @@ a.typeform-share.typeform-top {
 }
 a.typeform-share.typeform-bottom.button {
   background-color: #87d852;
+  color: white;
   border: 1px solid #87d852;
 }
 a.typeform-share.typeform-bottom.button:hover {

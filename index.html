@@ -6,10 +6,10 @@ slides:
     klass: centered-text
     small_title:
       klass: bottom-to-top
-      text: Reward Your Customers
+      text: All Available Options
     title:
       klass: bottom-to-top
-      text: Reduce Liability
+      text: One Place
     buttons:
       klass: bottom-to-top
       items:
@@ -17,27 +17,41 @@ slides:
           text: View Features
           link_to: http://www.reddit.com
 
-hub-services:
+app-services-first:
   - icon: fighter-jet
-    title: Easily offer a reward for free
-    desc: Offering a reward if easy. Creating an account takes less than 5 minutes.
-  - icon: line-chart
+    title: Free rides from friends and family
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum veritatis, corporis repellat minus perferendis voluptatum!
+  - icon: Price conscious (Surge pricing)
     title: Optimize rewards for success
-    desc: Refine your designated driver rewards to maximize impact bacsed on average party size, redemption rate to increase ticket size and drive traffic to where you care about the most, your business.
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores molestias error tenetur? Quis, neque, vel.
   - icon: signal
-    title: Quantify you efforts
-    desc: Instantly see analytics that let you know how many people you have helped get home safe. Helping lower your businesses liablility and insurance premiums.
+    title: Need car in the morining
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero aspernatur autem rem asperiores veniam!
+  - icon: rocket
+    title: Simply not knowing whats available
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eos, quis suscipit non provident! Quibusdam.
 
-app-services:
-- icon: filter
-  title: Quickly find the best option for you
-  desc: HERO makes it easy to compare all options side by side and discover options you may not know even exist.
-- icon: trophy
-  title: Get rewarded for getting home safe
-  desc: Anytime you use the app to get your ride home you earn reward points toward free food, drinks, events, and experiences around town.
-- icon: money
-  title: Cash in on being a designated driver for friends
-  desc: Use HERO everytime you are a DD to earn up to $30 in rewards for being a HERO for the people you care about.
+app-services-second:
+  - icon: intersex
+    title: Make yourself available in a single click
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quibusdam perspiciatis voluptatibus esse dolor quis?
+  - icon: scissors
+    title: Determine who's available to you
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia labore, modi odio cupiditate, minima cumque?
+  - icon: paperclip
+    title: Earn rewards for being a good friend
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia alias illum, aperiam, natus ipsam ex!
+
+app-services-third:
+  - icon: btc
+    title: Using the app to get home
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eos, placeat, quisquam similique laborum dolore.
+  - icon: pie-chart
+    title: Being available for friends &amp; family
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eaque eum, sunt labore minus, delectus?
+  - icon: ship
+    title: Giving a ride to a friend
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas architecto iusto natus dolor ducimus ullam.
 
 milestones:
   - icon: cutlery
@@ -99,13 +113,11 @@ milestones:
                     <div class='small-title {{ slide.small_title.klass }}' style='position:static;'>
                       <div class='row'>
                         <div class='large-12 columns'>
-                          <h2>Lock in your free membership today</h2>
+                          <h2>Being a Designated Driver has never been this rewarding</h2>
                         </div>
                       </div>
                     </div>
                     <div class="centered-text">
-                      <a class="typeform-share typeform-top button" href="https://heroapp.typeform.com/to/luZsL5" data-mode="1" target="_blank">Let&#039;s do it</a>
-                      <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
                     </div>
                   </form>
 
@@ -118,92 +130,54 @@ milestones:
       {% endfor %}
     </ul>
   </div>
-</div>
-
-<!-- Value Statements -->
-<div class="four spacing"></div>
-
-<div class="row">
-  <div class="medium-4 large-4 columns">
-    {% include icon-text.html title='Reduce Liability' desc='Promoting HERO can reduce your liability and protect you from Dram Shop Laws.' icon_class='fa fa-gavel' delay='0' shape_class='icon-text-circle' %}
-  </div>
-  <div class="medium-4 large-4 columns">
-    {% include icon-text.html title='Increase Revenue' desc='Offering rewards on HERO to Designated Drivers and customers who use the app instead of driving drunk incentivizes them to keep coming back.' icon_class='fa fa-line-chart' delay='200' shape_class='icon-text-circle' %}
-  </div>
-  <div class="medium-4 large-4 columns">
-    {% include icon-text.html title='Lower Premiums' desc='Offer a reward on HERO and start working toward Safe Bar Discounts on you liability insurance.' icon_class='fa fa-trophy' delay='400' shape_class='icon-text-circle' %}
-  </div>
-</div>
-
-<div class="spacing"></div>
-
-<!-- Video Section -->
-<div>
-  <div class="spacing two"></div>
-
-  <div class="row centered-text">
-    <iframe class="youtube-iframe" width="560" height="315" src="https://www.youtube.com/embed/dT0h9dsUm-k" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <div class="spacing two"></div>
-</div>
-
-<!-- The Stats -->
-<!-- <div class='full parallax' style='background-image: url(images/banner/girl.jpg); color: #fff;'> -->
-<div class='full parallax' style='background-image: url(images/crowd.jpg); color: #fff;'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="The Stats" color="#fff" %}
-      <div class='spacing'></div>
-    </div>
-  </div>
-  <div class='row'>
-    {% for milestone in page.milestones %}
-      <div class='medium-3 large-3 columns'>
-        <div class='mod modMilestone'>
-          <i class='fa fa-{{milestone.icon}}'></i>
-          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
-          <span>{{milestone.title}}</span>
-          <div class='four spacing'></div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-  <div class='spacing'></div>
+  <i class='fa fa-arrow-down bottom-to-top' style='position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:100;color:white;font-size:200%;'></i>
 </div>
 
 <!-- The Solution -->
 <div class="full">
   <div class="row">
     <div class="large-12 columns">
-      {% include section-header.html title="HERO Simplifies Getting People Home Safe" %}
+      {% include section-header.html title="HERO Simplifies Getting You Home Safe" %}
       <div class="spacing"></div>
-      <p class="centered-text">
-        We all know that drunk driving is wrong and that the punishment is severe, yet people doing it resulting in thousands of deaths and millions of arrests.
-        <br>
-        It's time for someone to change the game, to stop pointing out the problem and the punishment, and start providing solutions backed by data and analytics.
-        <br>
-        We amkeit easier and rewarding for customers to get home safe. All options in one place, for free.
-      </p>
-      <div class="three spacing"></div>
     </div>
   </div>
 </div>
 
-<!-- App Service -->
+<!-- Video Section -->
+<div>
+  <div class="row centered-text">
+    <iframe class="youtube-iframe" width="560" height="315" src="https://www.youtube.com/embed/dT0h9dsUm-k" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="spacing three"></div>
+</div>
+
+<!-- App Service First -->
 <div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="The HERO app" %}
+      {% include section-header.html title="All Available Opitons in One Place" %}
       <div class='spacing'></div>
     </div>
   </div>
   <div class='row'>
-    <div class='medium-6 columns'>
-      <img class="fadeinleft" alt="" src="images/appmockup.png" />
+    <div class='medium-6 columns hide-small'>
+      {% for service in page.app-services-first %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class='medium-6 columns centered-text'>
+      <img class="fadeinright" alt="" src="../images/app/app-available-options.png" />
       <div class='three spacing'></div>
     </div>
-    <div class='medium-6 columns'>
+    <div class='medium-6 columns hide-large'>
       {% for service in page.app-services %}
         <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
           <div class='icon-text-simple'>
@@ -219,17 +193,46 @@ milestones:
   <div class='spacing'></div>
 </div>
 
-<!-- Hub Service -->
+<!-- App Service Second -->
 <div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="The HERO hub" %}
+      {% include section-header.html title="Easier to Be There For Your Friends" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='medium-6 columns centered-text'>
+      <img class="fadeinleft" alt="" src="../images/app/app-friends.png" />
+      <div class='three spacing'></div>
+    </div>
+    <div class='medium-6 columns'>
+      {% for service in page.app-services-second %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+<!-- App Service Third -->
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Get Rewarded For Using HERO" %}
       <div class='spacing'></div>
     </div>
   </div>
   <div class='row'>
     <div class='medium-6 columns hide-small'>
-      {% for service in page.hub-services %}
+      {% for service in page.app-services-third %}
         <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
           <div class='icon-text-simple'>
             <i class='fa fa-{{service.icon}}'></i>
@@ -240,12 +243,12 @@ milestones:
         </div>
       {% endfor %}
     </div>
-    <div class='medium-6 columns'>
-      <img class="fadeinright" alt="" src="images/hubmockup.png" />
+    <div class='medium-6 columns centered-text'>
+      <img class="fadeinright" alt="" src="../images/app/app-rewards.png" />
       <div class='three spacing'></div>
     </div>
     <div class='medium-6 columns hide-large'>
-      {% for service in page.hub-services %}
+      {% for service in page.app-services %}
         <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
           <div class='icon-text-simple'>
             <i class='fa fa-{{service.icon}}'></i>
@@ -260,64 +263,12 @@ milestones:
   <div class='spacing'></div>
 </div>
 
-<!-- Our Team -->
-<div class='full'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Our team" %}
-      <div class='spacing'></div>
-    </div>
-  </div>
-  <div class='row'>
-    {% for member in site.data.members %}
-      <div class='small-6 medium-4 large-4 columns'>
-        <div class='mod modTeamMember'>
-          <div class='member'>
-            <img class="avatar" alt="" src="{{ member.avatar }}" />
-            <div class='overlay'>
-              <div class='intro'>
-                <h3>{{member.name}}</h3>
-                <p>{{member.position}}</p>
-                <ul class='socials'>
-                  {% for social in member.socials %}
-                    <li>
-                      <a href='{{social.link}}'>
-                        <i class='fa fa-{{social.icon}}'></i>
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class='two spacing'></div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
-
+<!-- Coming Soon -->
 <div class='full' style='background: #f5f5f5'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="HERO app coming late summer 2016" %}
+      {% include section-header.html title="HERO app coming fall 2016" %}
       <div class='two spacing'></div>
     </div>
   </div>
-
-</div>
-
-<div class='full no-padding' style='background: #fff'>
-  <div class='two spacing'></div>
-  <div class='mod modCallToAction'>
-    <div class='row'>
-      <div class='medium-9 large-9 columns'>
-        <p>Don't miss out. Lock in your free membership today.</p>
-      </div>
-      <div class='medium-3 large-3 columns'>
-        <a class="typeform-share button typeform-bottom" href="https://heroapp.typeform.com/to/luZsL5" data-mode="2" target="_blank">Let&#039;s do it</a>
-      </div>
-    </div>
-  </div>
-  <div class='spacing'></div>
 </div>

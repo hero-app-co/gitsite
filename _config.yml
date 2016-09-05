@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   more rewarding. In the end, users are safer and there are less DUI’s and
   related fatalities. We optimize access to all available transportation options
   and reward designated drivers. We prove the social good in people. If it gets
-  people home without driving, it can be found on the HEROapp. 
+  people home without driving, it can be found on the HEROapp.
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
@@ -16,6 +16,8 @@ twitter_username: jekyllrb
 # Build settings
 markdown: kramdown
 
+# Gems
+gems: [jekyll-paginate]
 
 paginate: 3
 paginate_path: "blog/page:num"
