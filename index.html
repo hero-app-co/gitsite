@@ -112,7 +112,7 @@ milestones:
       <div class='three spacing'></div>
     </div>
     <div class='medium-6 columns hide-large'>
-      {% for service in page.app-services %}
+      {% for service in page.app-services-first %}
         <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
           <div class='icon-text-simple'>
             <i class='fa fa-{{service.icon}}'></i>
@@ -182,7 +182,7 @@ milestones:
       <div class='three spacing'></div>
     </div>
     <div class='medium-6 columns hide-large'>
-      {% for service in page.app-services %}
+      {% for service in page.app-services-third %}
         <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
           <div class='icon-text-simple'>
             <i class='fa fa-{{service.icon}}'></i>

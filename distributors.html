@@ -7,10 +7,10 @@ slides:
     klass: centered-text
     small_title:
       klass: bottom-to-top
-      text: To all the
+      text: Become the
     title:
       klass: bottom-to-top
-      text: Distributors
+      text: Preferred Distributor
     buttons:
       klass: bottom-to-top
       items:
@@ -18,41 +18,17 @@ slides:
           text: View Features
           link_to: http://www.reddit.com
 
-app-services-first:
-  - icon: fighter-jet
-    title: Free rides from friends and family
+benefits:
+  - icon: upload
+    title: Gain brand presence at point of purchase
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum veritatis, corporis repellat minus perferendis voluptatum!
-  - icon: Price conscious (Surge pricing)
-    title: Optimize rewards for success
+  - icon: tachometer
+    title: Drive trial and activation for your brands
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores molestias error tenetur? Quis, neque, vel.
-  - icon: signal
-    title: Need car in the morining
+  - icon: dollar
+    title: Provide value to on premise accounts
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero aspernatur autem rem asperiores veniam!
-  - icon: rocket
-    title: Simply not knowing whats available
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eos, quis suscipit non provident! Quibusdam.
 
-app-services-second:
-  - icon: intersex
-    title: Make yourself available in a single click
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quibusdam perspiciatis voluptatibus esse dolor quis?
-  - icon: scissors
-    title: Determine who's available to you
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia labore, modi odio cupiditate, minima cumque?
-  - icon: paperclip
-    title: Earn rewards for being a good friend
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia alias illum, aperiam, natus ipsam ex!
-
-app-services-third:
-  - icon: btc
-    title: Using the app to get home
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eos, placeat, quisquam similique laborum dolore.
-  - icon: pie-chart
-    title: Being available for friends &amp; family
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eaque eum, sunt labore minus, delectus?
-  - icon: ship
-    title: Giving a ride to a friend
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas architecto iusto natus dolor ducimus ullam.
 
 milestones:
   - icon: cutlery
@@ -61,16 +37,16 @@ milestones:
     title: <span class="stat-highlight">Thousand</span><br>Bars &amp; Restaurants in America
   - icon: users
     from: 0
-    to: 19
-    title: <span class="stat-highlight">Billion</span><br>Visitors to Bars and Restaurants Each Year
+    to: 121
+    title: <span class="stat-highlight">Million</span><br>Times americans drove drunk last year
   - icon: car
     from: 0
     to: 80
     title: <span class="stat-highlight">Million</span><br>Americans Without Paid Transportation Access
   - icon: ambulance
     from: 0
-    to: 103
-    title: <span class="stat-highlight">Million</span><br>Americans Use Designated Drivers
+    to: 19
+    title: <span class="stat-highlight">Billion</span><br>Visitors to Bars and Restaurants Each Year
 
 ---
 
@@ -86,18 +62,25 @@ milestones:
         {% endif %}
 
         <li class='frame {{style}} {{ slide.klass }}'>
-          <div class='bg' style='background-color: #87d852;'></div>
+          <div class='bg' style='background-color: #191919;'></div>
           <div class='small-title {{ slide.small_title.klass }}'>
             <div class='row'>
               <div class='large-12 columns'>
-                <h2>{{ slide.small_title.text }}</h2>
+                <h2 style="color:#87d852;">{{ slide.small_title.text }}</h2>
               </div>
             </div>
           </div>
           <div class='title {{ slide.title.klass }}'>
             <div class='row'>
               <div class='large-12 columns'>
-                <h2>{{ slide.title.text }}</h2>
+                <h2 style="color:#87d852;">{{ slide.title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class='small-title {{ slide.small_title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2 style="color:#87d852;">for bars &amp; restaurants in your area</h2>
               </div>
             </div>
           </div>
@@ -114,7 +97,7 @@ milestones:
                     <div class='small-title {{ slide.small_title.klass }}' style='position:static;'>
                       <div class='row'>
                         <div class='large-12 columns'>
-                          <h2>Make more from your routes</h2>
+                          <!-- <h2>for bars &amp; restaurants in your area</h2> -->
                         </div>
                       </div>
                     </div>
@@ -134,19 +117,79 @@ milestones:
   <i class='fa fa-arrow-down bottom-to-top' style='position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:100;color:white;font-size:200%;'></i>
 </div>
 
-<div class='full'>
+<!-- The Stats -->
+<div class='full parallax' style='background-image: url(images/crowd.jpg); color: #fff;'>
   <div class='row'>
-    <div class="large-12 columns">
-      {% include section-header.html title="How?" %}
-      <div class="spacing"></div>
-    </div>
-    <div class='medium-12 columns' style='text-align:center;'>
-      <p style='font-size:1.2rem;'>
-        Fuck if I know
-      </br></br>
-        Flesh this out plzzzz
-      </p>
+    <div class='large-12 columns'>
+      {% include section-header.html title="The Stats" color="#fff" %}
+      <div class='spacing'></div>
     </div>
   </div>
-  <div class='four spacing'></div>
+  <div class='row'>
+    {% for milestone in page.milestones %}
+      <div class='medium-3 large-3 columns'>
+        <div class='mod modMilestone'>
+          <!-- <i class='fa fa-{{milestone.icon}}'></i> -->
+          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
+          <span>{{milestone.title}}</span>
+          <div class='four spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='spacing'></div>
+</div>
+
+
+<!-- Benefits -->
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="HERO providers a competitive advantage in a crowded industry" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='medium-6 columns hide-small'>
+      {% for service in page.benefits %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class='medium-6 columns centered-text'>
+      <img class="fadeinright" alt="" src="images/appmockup.png" />
+      <div class='three spacing'></div>
+    </div>
+    <div class='medium-6 columns hide-large'>
+      {% for service in page.benefits %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+
+<!-- CTA -->
+<div class='full'>
+  <div class='row'>
+
+    <div class='large-12 columns' style="text-align:center;">
+      <button><a style="color:white;" href="contact.html">Click here to contact us</a></button>
+    </div>
+
+  </div>
 </div>

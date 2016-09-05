@@ -1,25 +1,26 @@
 - name: Home
   path: index.html
   section_id: home
-- name: Insurance
-  path: insurance.html
-  section_id: insurance
-- name: Brands
+- name: For Business
   path: beverage.html
   section_id: brands
   children:
+    - name: Insurance
+      path: insurance.html
     - name: Beverage
       path: beverage.html
     - name: Distributors
       path: distributors.html
+    - name: Bars &amp; Restaurants
+      path: restaurants.html
 - name: Getting Involved
   path: rewards.html
   section_id: getting_involved
   children:
     - name: Rewards
       path: rewards.html
-    - name: Bars &amp; Restaurants
-      path: restaurants.html
+    - name: Community
+      path: community.html
 - name: About Us
   path: mission.html
   section_id: about-us
@@ -28,10 +29,8 @@
       path: mission.html
     - name: Origin Story
       path: story.html
-    - name: Our Team
-      path: team.html
-    - name: Sponsors
-      path: sponsors.html
+    - name: Press Kit
+      path: press-kit.html
     - name: Contact Us
       path: contact.html
 # - name: Portfolio

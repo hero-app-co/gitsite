@@ -1,36 +1,128 @@
 ---
 layout: default
 title: Bars &amp; Restaurants
-section_id: getting-involved
+section_id: brands
 
-reward-perks:
-  - icon: fighter-jet
-    title: Open marketplace, free to any business to sign up
+slides:
+  - bg: images/@stock/slide-4.jpg
+    klass: centered-text
+    small_title:
+      klass: bottom-to-top
+      text:
+    title:
+      klass: bottom-to-top
+      text: Get customers home safely
+    buttons:
+      klass: bottom-to-top
+      items:
+        - klass: boxed
+          text: View Features
+          link_to: http://www.reddit.com
+
+benefits:
+  - icon: trophy
+    title: Rewards drive foot traffic
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum veritatis, corporis repellat minus perferendis voluptatum!
-  - icon: Price conscious (Surge pricing)
-    title: Offer rewards and determine how many points it costs to redeem
+  - icon: money
+    title: Drives a 31x return on average
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores molestias error tenetur? Quis, neque, vel.
-  - icon: signal
-    title: Rewards can be anything; from free appetizers to tickets for sporting events or concerts
+  - icon: long-arrow-down
+    title: Lowers liability and premiums by participating
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero aspernatur autem rem asperiores veniam!
-  - icon: rocket
-    title: 31X return on $1 COG given out (3 month pilot, Bozeman, MT)
+  - icon: signing
+    title: Simplifies process of helping customers get home safely
     desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eos, quis suscipit non provident! Quibusdam.
+
+milestones:
+  - icon: cutlery
+    from: 0
+    to: 587
+    title: <span class="stat-highlight">Thousand</span><br>Bars &amp; Restaurants in America
+  - icon: ambulance
+    from: 0
+    to: 19
+    title: <span class="stat-highlight">Billion</span><br>Visitors to Bars and Restaurants Each Year
+  - icon: car
+    from: 0
+    to: 80
+    title: <span class="stat-highlight">Million</span><br>Americans Without Paid Transportation Access
+  - icon: users
+    from: 0
+    to: 121
+    title: <span class="stat-highlight">Million</span><br>Times americans drove drunk last year
+
+
+platform:
+  - icon: universal-access
+    title: Participate for free, sign up in under 5 minutes
+  - icon: fire-extinguisher
+    title: Make it easy for your staff to help customers get home safely
+  - icon: mobile
+    title: Simple to use interface that works on mobile and desktops
+  - icon: globe
+    title: Open rewards marketplace, you determine what reward to offer
+  - icon: gears
+    title: Analytics make it easy to optimize your reward for maximum impact
+
 ---
-<div class='full parallax' style='background: #000; color: #fff;'>
-  <div class='row'>
-    <div class='twelve columns'>
-      {% include section-header.html title="Bars &amp; Restaurants" color="#fff" tagline="Let our patrons help your patrons" class="big" %}
-    </div>
+
+<!-- Banner Image and CTA -->
+<div class='mod modDefaultSlider'>
+  <div class='sequence' data-autostop='on' data-timeout='0'>
+    <ul class='sequence-canvas'>
+      {% for slide in page.slides %}
+        {% if forloop.first %}
+          {% assign style = 'static' %}
+        {% else %}
+          {% assign style = '' %}
+        {% endif %}
+
+        <li class='frame {{style}} {{ slide.klass }}'>
+          <div class='bg' style='background-color: #191919;'></div>
+          <div class='title {{ slide.title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2 style="color:#87d852;">{{ slide.title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class='small-title {{ slide.small_title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2 style="color:#87d852;">{{ slide.small_title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class='buttons-wrapper {{ slide.buttons.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <div class='two spacing'></div>
+                {% for button in slide.buttons.items %}
+                  {% if button.klass == 'boxed' %}
+                  <form action=""  class='medium-6 medium-offset-3'>
+                  {% else %}
+                  <form action=""  class='medium-6 medium-offset-1'>
+                  {% endif %}
+                    <div class="centered-text">
+                    </div>
+                  </form>
+
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
-  <div class='four spacing'></div>
+  <i class='fa fa-arrow-down bottom-to-top' style='position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:100;color:white;font-size:200%;'></i>
 </div>
 
-<!-- Rewards -->
+<!-- Benefits -->
 <div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="This is the same list as the rewards page just so ya know. Keep it DRY (Dont repeat yourself)" %}
+      {% include section-header.html title="Benefits" %}
       <div class='spacing'></div>
     </div>
   </div>
@@ -40,7 +132,7 @@ reward-perks:
       <div class='three spacing'></div>
     </div>
     <div class='medium-6 columns'>
-      {% for service in page.reward-perks %}
+      {% for service in page.benefits %}
         <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
           <div class='icon-text-simple'>
             <i class='fa fa-{{service.icon}}'></i>
@@ -55,27 +147,67 @@ reward-perks:
   <div class='spacing'></div>
 </div>
 
-<!-- Value Statements -->
-<div class="four spacing"></div>
 
-<div class="row">
-  <div class="large-12 columns">
-    {% include section-header.html title="Benefits" %}
-    <div class="spacing"></div>
+<!-- The Stats -->
+<div class='full parallax' style='background-image: url(images/crowd.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="The Stats" color="#fff" %}
+      <div class='spacing'></div>
+    </div>
   </div>
-
-  <div class="medium-3 large-3 columns">
-    {% include icon-text.html title='Lower liability' desc='description goes here' icon_class='fa fa-life-ring' delay='400' shape_class='icon-text-circle' %}
+  <div class='row'>
+    {% for milestone in page.milestones %}
+      <div class='medium-3 large-3 columns'>
+        <div class='mod modMilestone'>
+          <!-- <i class='fa fa-{{milestone.icon}}'></i> -->
+          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
+          <span>{{milestone.title}}</span>
+          <div class='four spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
-  <div class="medium-3 large-3 columns">
-    {% include icon-text.html title='Lower premiums' desc='description goes here' icon_class='fa fa-line-chart' delay='200' shape_class='icon-text-circle' %}
-  </div>
-  <div class="medium-3 large-3 columns">
-    {% include icon-text.html title='Single solution that fits all your customers needs' desc='description goes here' icon_class='fa fa-gavel' delay='400' shape_class='icon-text-circle' %}
-  </div>
-  <div class="medium-3 large-3 columns">
-    {% include icon-text.html title='Increased revenue' desc='description goes here' icon_class='fa fa-life-ring' delay='400' shape_class='icon-text-circle' %}
-  </div>
+  <div class='spacing'></div>
 </div>
 
-<div class="spacing"></div>
+<!-- Platform -->
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="A platform designed with you in mind" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='medium-6 columns hide-small'>
+      {% for service in page.platform %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class='medium-6 columns centered-text'>
+      <img class="fadeinright" alt="" src="../images/app/app-available-options.png" />
+      <div class='three spacing'></div>
+    </div>
+    <div class='medium-6 columns hide-large'>
+      {% for service in page.platform %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>

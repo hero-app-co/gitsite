@@ -16,12 +16,56 @@ section_id: about-us
   <div class='row'>
     <div class='medium-12 columns' style='text-align:center;'>
       <p style='font-size:1.2rem;'>
-        HERO is more than an app, it’s a community of people and businesses supporting the ability to enjoy a night out while having a responsible solution to get home in your pocket. We don’t discriminate when it comes to choices to get home.
-        All options, one spot, for free, including friends and family.
+        HERO is a movement, it’s a community of people and businesses providing a responsible solution to get home in your pocket, supporting the ability to safely enjoy a night out with friends and loved ones. We are committed to fundamentally changing the drunk driving culture that has devastated so many families.
       <br><br>
-        HERO strengthens communities and their responsibility by creating options; our app is the way we connect all of that. We build a local community of users and partners based on common sense and responsible behavior facilitated by simple actions all focused on enhancing good times!
-        Becoming the simplest and most reliable way to get from A to B safely.
+        <strong>The best option to get home. Instantly.</strong>
+      <br><br>
+        HERO strengthens communities and reinforces responsible habits by rewarding people for not driving drunk and being there for each other; our app is the way we connect all of that. We empower local communities and partners with a common sense solution!
+      <br><br>
+        <strong>The simplest and most reliable way to get from A to B safely.</strong>
       </p>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+<!-- Our Team -->
+<div class='full' style='background:#191919'>
+  <div class='row'>
+
+    <div class='twelve columns'>
+      {% include section-header.html title="Our Team" color="#fff" tagline="The 'A' Team" class="big" %}
+    </div>
+
+    <div class="hide-small medium-1 large-1 columns">
+      <br>
+    </div>
+    {% for member in site.data.members %}
+      <div class='small-3 medium-2 large-2 columns'>
+        <div class='mod modTeamMember'>
+          <div class='member'>
+            <img class="avatar" alt="" src="{{ member.avatar }}" />
+            <div class='overlay'>
+              <div class='intro'>
+                <h3>{{member.name}}</h3>
+                <p>{{member.position}}</p>
+                <ul class='socials'>
+                  {% for social in member.socials %}
+                    <li>
+                      <a href='{{social.link}}' target="_blank">
+                        <i class='fa fa-{{social.icon}}'></i>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    <div class="hide-small medium-1 large-1 columns">
+      <br>
     </div>
   </div>
   <div class='four spacing'></div>

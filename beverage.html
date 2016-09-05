@@ -6,7 +6,7 @@ slides:
     klass: centered-text
     small_title:
       klass: bottom-to-top
-      text: Prepare to
+      text: by partnering with HERO
     title:
       klass: bottom-to-top
       text: Engage Millennials
@@ -17,66 +17,35 @@ slides:
           text: View Features
           link_to: http://www.reddit.com
 
-insights:
-  - icon: fighter-jet
-    title: Reduce Claims
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur enim magni accusamus officia architecto recusandae?
-  - icon: line-chart
-    title: Lower Liability
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsa dicta commodi, quasi, fugit deserunt.
-  - icon: signal
-    title: Underwrite Decisions
-    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quae, praesentium aut cupiditate, asperiores facere?
-
 benefits:
-- icon: filter
+- icon: arrows-alt
   title: Improved awareness amongst millennial customers
   desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis nam aspernatur totam, eum iure!
-- icon: trophy
-  title: Providing a competitive advantage in a crowded industry
-  desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste at reprehenderit, et, deleniti voluptate.
-- icon: money
+- icon: chevron-circle-up
   title: Increase brand loyalty by providing value to customers
-  desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci delectus dolor voluptate, eos incidunt rem?
-- icon: rocket
-  title: Drive brand trial and activation
+  desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste at reprehenderit, et, deleniti voluptate.
+- icon: beer
+  title: Drives brand trial and activation
   desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci delectus dolor voluptate, eos incidunt rem?
 
-metrics:
-  - icon: cutlery
-    from: 0
-    to: 91
-    title: <span class="stat-highlight">Percent</span><br>Participation
-  - icon: users
-    from: 0
-    to: 1400
-    title: <span class="stat-highlight">Rides</span><br>By app users
-  - icon: car
-    from: 0
-    to: 31
-    title: <span class="stat-highlight">Times</span><br>ROI for rewards
-  - icon: ambulance
-    from: 0
-    to: 3.6
-    title: <span class="stat-highlight">Million</span><br>Millenials reached
 
 milestones:
   - icon: cutlery
     from: 0
-    to: 587
-    title: <span class="stat-highlight">Thousand</span><br>Bars &amp; Restaurants in America
+    to: 6
+    title: <span class="stat-highlight">Billion</span><br>spent per year on Don't drink and drive ads
   - icon: users
     from: 0
-    to: 19
-    title: <span class="stat-highlight">Billion</span><br>Visitors to Bars and Restaurants Each Year
+    to: 121
+    title: <span class="stat-highlight">Million</span><br>times americans drive drunk last year
   - icon: car
     from: 0
     to: 80
     title: <span class="stat-highlight">Million</span><br>Americans Without Paid Transportation Access
   - icon: ambulance
     from: 0
-    to: 103
-    title: <span class="stat-highlight">Million</span><br>Americans Use Designated Drivers
+    to: 19
+    title: <span class="stat-highlight">Billion</span><br>visitors to bars and restaurants each year
 
 ---
 
@@ -92,18 +61,18 @@ milestones:
         {% endif %}
 
         <li class='frame {{style}} {{ slide.klass }}'>
-          <div class='bg' style='background-color: #87d852;'></div>
-          <div class='small-title {{ slide.small_title.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <h2>{{ slide.small_title.text }}</h2>
-              </div>
-            </div>
-          </div>
+          <div class='bg' style='background-color: #191919;'></div>
           <div class='title {{ slide.title.klass }}'>
             <div class='row'>
               <div class='large-12 columns'>
-                <h2>{{ slide.title.text }}</h2>
+                <h2 style="color:#87d852;">{{ slide.title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class='small-title {{ slide.small_title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2 style="color:#87d852;">{{ slide.small_title.text }}</h2>
               </div>
             </div>
           </div>
@@ -117,21 +86,9 @@ milestones:
                   {% else %}
                   <form action=""  class='medium-6 medium-offset-1'>
                   {% endif %}
-                    <div class='small-title {{ slide.small_title.klass }}' style='position:static;'>
-                      <div class='row'>
-                        <div class='large-12 columns'>
-                          <h2>
-                            by incentivizing them to get home safely and be HERO’s when their friends need them most
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
                     <div class="centered-text">
-                      <!-- <a class="typeform-share typeform-top button" href="https://heroapp.typeform.com/to/luZsL5" data-mode="1" target="_blank">Request Early Access</a>
-                      <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script> -->
                     </div>
                   </form>
-
 
                 {% endfor %}
               </div>
@@ -143,7 +100,6 @@ milestones:
   </div>
   <i class='fa fa-arrow-down bottom-to-top' style='position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:100;color:white;font-size:200%;'></i>
 </div>
-
 
 <!-- The Stats -->
 <div class='full parallax' style='background-image: url(images/crowd.jpg); color: #fff;'>
@@ -157,7 +113,7 @@ milestones:
     {% for milestone in page.milestones %}
       <div class='medium-3 large-3 columns'>
         <div class='mod modMilestone'>
-          <i class='fa fa-{{milestone.icon}}'></i>
+          <!-- <i class='fa fa-{{milestone.icon}}'></i> -->
           <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
           <span>{{milestone.title}}</span>
           <div class='four spacing'></div>
@@ -172,7 +128,7 @@ milestones:
 <div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="Benefits of partnering with HERO" %}
+      {% include section-header.html title="Gain an advantage in a crowded industry" %}
       <div class='spacing'></div>
     </div>
   </div>
@@ -194,7 +150,7 @@ milestones:
       <div class='three spacing'></div>
     </div>
     <div class='medium-6 columns hide-large'>
-      {% for service in page.app-services %}
+      {% for service in page.benefits %}
         <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
           <div class='icon-text-simple'>
             <i class='fa fa-{{service.icon}}'></i>
@@ -210,61 +166,13 @@ milestones:
 </div>
 
 
-
-<div class="full">
-  <div class="row">
-    <div class="large-12 columns">
-      {% include section-header.html title="Partnering with Brands who believe in proactively keeping communities safe" %}
-      <div class="spacing"></div>
-    </div>
-    (picture of poster, coaster, and rewards screen w/ budlight as first reward)
-  </div>
-</div>
-
-
-<!-- Pilot Metrics -->
-<div class='full parallax' style='background-image: url(images/crowd.jpg); color: #fff;'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Pilot Metrics" color="#fff" %}
-      <div class='spacing'></div>
-    </div>
-  </div>
-  <div class='row'>
-    {% for metric in page.metrics %}
-      <div class='medium-3 large-3 columns'>
-        <div class='mod modMilestone'>
-          <i class='fa fa-{{metric.icon}}'></i>
-          <strong data-from='{{metric.from}}' data-to='{{metric.to}}'>&nbsp;</strong>
-          <span>{{metric.title}}</span>
-          <div class='four spacing'></div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-  <div class='spacing'></div>
-</div>
-
-
-<!-- HERO images -->
+<!-- CTA -->
 <div class='full'>
   <div class='row'>
 
-    <div class='large-12 columns'>
-      {% include section-header.html title="A single solution that fits every customer’s need, including friends &amp; family" %}
-      <div class='spacing'></div>
-    </div>
-
-    <div class='medium-6 columns centered-text'>
-      <img class="fadeinleft" alt="" src="images/hubmockup.png" />
-      <div class='three spacing'></div>
-    </div>
-
-    <div class='medium-6 columns centered-text'>
-      <img class="fadeinright" alt="" src="images/appmockup.png" />
-      <div class='three spacing'></div>
+    <div class='large-12 columns' style="text-align:center;">
+      <button><a style="color:white;" href="contact.html">Click here to contact us</a></button>
     </div>
 
   </div>
-  <div class='spacing'></div>
 </div>
